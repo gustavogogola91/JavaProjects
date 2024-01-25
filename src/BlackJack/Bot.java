@@ -11,9 +11,9 @@ public class Bot extends Player {
     public boolean decision() {
         SecureRandom generator = new SecureRandom();
 
-        if(sumCards() <= 11) {
+        if(sumCards() <= 12) {
             addCard();
-        } else if(sumCards() <= 15) {
+        } else if(sumCards() <= 16) {
             if(generator.nextInt(2) == 0) {
                 addCard();
             }
